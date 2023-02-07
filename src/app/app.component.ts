@@ -58,6 +58,18 @@ export class AppComponent {
       this.result = `Oyunu ${this.next} Kazandı!`
       this.winner.push(2,4,6);
     }
+    else if (this.games[0] != "" && this.games[0] == this.games[3] && this.games[3] == this.games[6]) {
+      this.result = `Oyunu ${this.next} Kazandı!`
+      this.winner.push(0,3,6);
+    }
+    else if (this.games[1] != "" && this.games[1] == this.games[4] && this.games[4] == this.games[7]) {
+      this.result = `Oyunu ${this.next} Kazandı!`
+      this.winner.push(1,4,7);
+    }
+    else if (this.games[2] != "" && this.games[2] == this.games[5] && this.games[5] == this.games[8]) {
+      this.result = `Oyunu ${this.next} Kazandı!`
+      this.winner.push(2,5,8);
+    }
   }
   
   
